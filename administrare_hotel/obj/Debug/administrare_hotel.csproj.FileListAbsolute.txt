@@ -1,0 +1,14 @@
+C:\Users\hacun\OneDrive\Documents\GitHub\hotel_administration_csharp\administrare_hotel\bin\Debug\administrare_hotel.exe.config
+C:\Users\hacun\OneDrive\Documents\GitHub\hotel_administration_csharp\administrare_hotel\bin\Debug\administrare_hotel.exe
+C:\Users\hacun\OneDrive\Documents\GitHub\hotel_administration_csharp\administrare_hotel\bin\Debug\administrare_hotel.pdb
+C:\Users\hacun\OneDrive\Documents\GitHub\hotel_administration_csharp\administrare_hotel\obj\Debug\administrare_hotel.csprojResolveAssemblyReference.cache
+C:\Users\hacun\OneDrive\Documents\GitHub\hotel_administration_csharp\administrare_hotel\obj\Debug\administrare_hotel.Form1.resources
+C:\Users\hacun\OneDrive\Documents\GitHub\hotel_administration_csharp\administrare_hotel\obj\Debug\administrare_hotel.Properties.Resources.resources
+C:\Users\hacun\OneDrive\Documents\GitHub\hotel_administration_csharp\administrare_hotel\obj\Debug\administrare_hotel.csproj.GenerateResource.Cache
+C:\Users\hacun\OneDrive\Documents\GitHub\hotel_administration_csharp\administrare_hotel\obj\Debug\administrare_hotel.csproj.CoreCompileInputs.cache
+C:\Users\hacun\OneDrive\Documents\GitHub\hotel_administration_csharp\administrare_hotel\obj\Debug\administrare_hotel.exe
+C:\Users\hacun\OneDrive\Documents\GitHub\hotel_administration_csharp\administrare_hotel\obj\Debug\administrare_hotel.pdb
+C:\Users\hacun\OneDrive\Documents\GitHub\hotel_administration_csharp\administrare_hotel\obj\Debug\administrare_hotel.Angajati.resources
+C:\Users\hacun\OneDrive\Documents\GitHub\hotel_administration_csharp\administrare_hotel\obj\Debug\administrare_hotel.Clienti.resources
+C:\Users\hacun\OneDrive\Documents\GitHub\hotel_administration_csharp\administrare_hotel\obj\Debug\administrare_hotel.Rezervari.resources
+C:\Users\hacun\OneDrive\Documents\GitHub\hotel_administration_csharp\administrare_hotel\obj\Debug\administrare_hotel.Camere.resources
