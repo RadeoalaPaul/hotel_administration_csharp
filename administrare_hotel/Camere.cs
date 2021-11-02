@@ -30,5 +30,16 @@ namespace administrare_hotel
             }
             else { };
         }
+
+        private void nav_about_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Titlu aplicatie: 'Administrare hotel'\nLimbaje folosite: MySQL & C#\nElev: Radeoala Paul\nProfesor coordonator: Babutia Teodora", "About", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+        }
+
+        private void nav_camere_help_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Aici poti adauga/modifica/sterge date despre camerele hotelului", "Help", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
     }
 }

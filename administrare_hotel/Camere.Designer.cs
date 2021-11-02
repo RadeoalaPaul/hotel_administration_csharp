@@ -28,84 +28,134 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Camere));
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.buton_adaugaCamere = new System.Windows.Forms.Button();
-            this.buton_modificaCamere = new System.Windows.Forms.Button();
-            this.buton_stergeCamere = new System.Windows.Forms.Button();
             this.buton_iesireCamere = new System.Windows.Forms.Button();
+            this.nav_camere = new System.Windows.Forms.MenuStrip();
+            this.nav_about = new System.Windows.Forms.ToolStripMenuItem();
+            this.nav_camere_help = new System.Windows.Forms.ToolStripMenuItem();
+            this.buton_stergeCamere = new System.Windows.Forms.Button();
+            this.buton_modificaCamere = new System.Windows.Forms.Button();
+            this.buton_adaugaCamere = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.nav_camere.SuspendLayout();
             this.SuspendLayout();
             // 
             // dataGridView1
             // 
             this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.Control;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 86);
+            this.dataGridView1.Location = new System.Drawing.Point(12, 78);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(584, 421);
             this.dataGridView1.TabIndex = 0;
             // 
-            // buton_adaugaCamere
-            // 
-            this.buton_adaugaCamere.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold);
-            this.buton_adaugaCamere.Location = new System.Drawing.Point(610, 86);
-            this.buton_adaugaCamere.Name = "buton_adaugaCamere";
-            this.buton_adaugaCamere.Size = new System.Drawing.Size(130, 60);
-            this.buton_adaugaCamere.TabIndex = 1;
-            this.buton_adaugaCamere.Text = "Adauga";
-            this.buton_adaugaCamere.UseVisualStyleBackColor = true;
-            // 
-            // buton_modificaCamere
-            // 
-            this.buton_modificaCamere.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold);
-            this.buton_modificaCamere.Location = new System.Drawing.Point(610, 152);
-            this.buton_modificaCamere.Name = "buton_modificaCamere";
-            this.buton_modificaCamere.Size = new System.Drawing.Size(130, 60);
-            this.buton_modificaCamere.TabIndex = 2;
-            this.buton_modificaCamere.Text = "Modifica";
-            this.buton_modificaCamere.UseVisualStyleBackColor = true;
-            // 
-            // buton_stergeCamere
-            // 
-            this.buton_stergeCamere.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold);
-            this.buton_stergeCamere.Location = new System.Drawing.Point(610, 218);
-            this.buton_stergeCamere.Name = "buton_stergeCamere";
-            this.buton_stergeCamere.Size = new System.Drawing.Size(130, 60);
-            this.buton_stergeCamere.TabIndex = 3;
-            this.buton_stergeCamere.Text = "Sterge";
-            this.buton_stergeCamere.UseVisualStyleBackColor = true;
-            // 
             // buton_iesireCamere
             // 
+            this.buton_iesireCamere.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buton_iesireCamere.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buton_iesireCamere.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold);
-            this.buton_iesireCamere.Location = new System.Drawing.Point(610, 447);
+            this.buton_iesireCamere.Location = new System.Drawing.Point(602, 439);
             this.buton_iesireCamere.Name = "buton_iesireCamere";
-            this.buton_iesireCamere.Size = new System.Drawing.Size(130, 60);
+            this.buton_iesireCamere.Size = new System.Drawing.Size(144, 60);
             this.buton_iesireCamere.TabIndex = 4;
             this.buton_iesireCamere.Text = "Iesire";
             this.buton_iesireCamere.UseVisualStyleBackColor = true;
             this.buton_iesireCamere.Click += new System.EventHandler(this.buton_iesireCamere_Click);
+            // 
+            // nav_camere
+            // 
+            this.nav_camere.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.nav_camere.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.nav_about,
+            this.nav_camere_help});
+            this.nav_camere.Location = new System.Drawing.Point(0, 0);
+            this.nav_camere.Name = "nav_camere";
+            this.nav_camere.Size = new System.Drawing.Size(758, 24);
+            this.nav_camere.TabIndex = 5;
+            this.nav_camere.Text = "menuStrip1";
+            // 
+            // nav_about
+            // 
+            this.nav_about.Name = "nav_about";
+            this.nav_about.Size = new System.Drawing.Size(52, 20);
+            this.nav_about.Text = "About";
+            this.nav_about.Click += new System.EventHandler(this.nav_about_Click);
+            // 
+            // nav_camere_help
+            // 
+            this.nav_camere_help.Name = "nav_camere_help";
+            this.nav_camere_help.Size = new System.Drawing.Size(44, 20);
+            this.nav_camere_help.Text = "Help";
+            this.nav_camere_help.Click += new System.EventHandler(this.nav_camere_help_Click);
+            // 
+            // buton_stergeCamere
+            // 
+            this.buton_stergeCamere.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buton_stergeCamere.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buton_stergeCamere.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold);
+            this.buton_stergeCamere.Image = global::administrare_hotel.Properties.Resources.delete;
+            this.buton_stergeCamere.Location = new System.Drawing.Point(602, 210);
+            this.buton_stergeCamere.Name = "buton_stergeCamere";
+            this.buton_stergeCamere.Size = new System.Drawing.Size(148, 60);
+            this.buton_stergeCamere.TabIndex = 3;
+            this.buton_stergeCamere.Text = "Sterge";
+            this.buton_stergeCamere.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.buton_stergeCamere.UseVisualStyleBackColor = true;
+            // 
+            // buton_modificaCamere
+            // 
+            this.buton_modificaCamere.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buton_modificaCamere.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buton_modificaCamere.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold);
+            this.buton_modificaCamere.Image = global::administrare_hotel.Properties.Resources.edit;
+            this.buton_modificaCamere.Location = new System.Drawing.Point(602, 144);
+            this.buton_modificaCamere.Name = "buton_modificaCamere";
+            this.buton_modificaCamere.Size = new System.Drawing.Size(148, 60);
+            this.buton_modificaCamere.TabIndex = 2;
+            this.buton_modificaCamere.Text = "Modifica";
+            this.buton_modificaCamere.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.buton_modificaCamere.UseVisualStyleBackColor = true;
+            // 
+            // buton_adaugaCamere
+            // 
+            this.buton_adaugaCamere.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buton_adaugaCamere.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buton_adaugaCamere.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold);
+            this.buton_adaugaCamere.Image = ((System.Drawing.Image)(resources.GetObject("buton_adaugaCamere.Image")));
+            this.buton_adaugaCamere.Location = new System.Drawing.Point(602, 78);
+            this.buton_adaugaCamere.Name = "buton_adaugaCamere";
+            this.buton_adaugaCamere.Size = new System.Drawing.Size(148, 60);
+            this.buton_adaugaCamere.TabIndex = 1;
+            this.buton_adaugaCamere.Text = "Adauga";
+            this.buton_adaugaCamere.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.buton_adaugaCamere.UseVisualStyleBackColor = true;
             // 
             // Camere
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.ClientSize = new System.Drawing.Size(752, 519);
+            this.ClientSize = new System.Drawing.Size(758, 511);
             this.ControlBox = false;
             this.Controls.Add(this.buton_iesireCamere);
             this.Controls.Add(this.buton_stergeCamere);
             this.Controls.Add(this.buton_modificaCamere);
             this.Controls.Add(this.buton_adaugaCamere);
             this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.nav_camere);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.MainMenuStrip = this.nav_camere;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Camere";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Camere";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.nav_camere.ResumeLayout(false);
+            this.nav_camere.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -116,5 +166,8 @@
         private System.Windows.Forms.Button buton_modificaCamere;
         private System.Windows.Forms.Button buton_stergeCamere;
         private System.Windows.Forms.Button buton_iesireCamere;
+        private System.Windows.Forms.MenuStrip nav_camere;
+        private System.Windows.Forms.ToolStripMenuItem nav_about;
+        private System.Windows.Forms.ToolStripMenuItem nav_camere_help;
     }
 }
