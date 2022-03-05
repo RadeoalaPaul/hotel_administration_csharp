@@ -41,5 +41,10 @@ namespace administrare_hotel
         {
             MessageBox.Show("Aici poti adauga/modifica/sterge date despre camerele hotelului", "Help", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
+
+        private void Camere_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

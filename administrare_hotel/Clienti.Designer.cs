@@ -145,6 +145,7 @@
             this.Controls.Add(this.date_clienti);
             this.Controls.Add(this.nav_clienti);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.nav_clienti;
             this.MaximizeBox = false;
             this.MinimizeBox = false;

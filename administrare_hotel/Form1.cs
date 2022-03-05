@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using MySql.Data;
+using MySql.Data.MySqlClient;
 
 namespace administrare_hotel
 {
@@ -20,7 +21,9 @@ namespace administrare_hotel
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            Database database = new Database();
+            if (!database.connection()) db_status.Text += " not connected";
+            else { db_status.Text += " connected successfully"; database.conn.Close(); }
         }
 
         private void buton_Iesire_Click(object sender, EventArgs e)

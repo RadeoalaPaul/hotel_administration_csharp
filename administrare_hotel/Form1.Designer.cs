@@ -32,6 +32,7 @@
             this.nav_main = new System.Windows.Forms.MenuStrip();
             this.nav_about = new System.Windows.Forms.ToolStripMenuItem();
             this.nav_main_help = new System.Windows.Forms.ToolStripMenuItem();
+            this.db_status = new System.Windows.Forms.TextBox();
             this.buton_Clienti = new System.Windows.Forms.Button();
             this.buton_Iesire = new System.Windows.Forms.Button();
             this.buton_Rezervari = new System.Windows.Forms.Button();
@@ -66,6 +67,16 @@
             this.nav_main_help.Size = new System.Drawing.Size(44, 20);
             this.nav_main_help.Text = "Help";
             this.nav_main_help.Click += new System.EventHandler(this.nav_main_help_Click);
+            // 
+            // db_status
+            // 
+            this.db_status.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.db_status.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.db_status.Location = new System.Drawing.Point(12, 54);
+            this.db_status.Name = "db_status";
+            this.db_status.Size = new System.Drawing.Size(220, 13);
+            this.db_status.TabIndex = 7;
+            this.db_status.Text = "Database Status: ";
             // 
             // buton_Clienti
             // 
@@ -153,6 +164,7 @@
             this.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.ClientSize = new System.Drawing.Size(471, 481);
             this.ControlBox = false;
+            this.Controls.Add(this.db_status);
             this.Controls.Add(this.buton_Clienti);
             this.Controls.Add(this.buton_Iesire);
             this.Controls.Add(this.buton_Rezervari);
@@ -160,6 +172,7 @@
             this.Controls.Add(this.buton_Angajati);
             this.Controls.Add(this.nav_main);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.nav_main;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
@@ -184,6 +197,7 @@
         private System.Windows.Forms.MenuStrip nav_main;
         private System.Windows.Forms.ToolStripMenuItem nav_about;
         private System.Windows.Forms.ToolStripMenuItem nav_main_help;
+        private System.Windows.Forms.TextBox db_status;
     }
 }
 

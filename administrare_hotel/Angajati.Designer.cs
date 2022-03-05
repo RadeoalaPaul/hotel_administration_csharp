@@ -50,6 +50,7 @@
             this.date_angajati.Name = "date_angajati";
             this.date_angajati.Size = new System.Drawing.Size(584, 421);
             this.date_angajati.TabIndex = 0;
+            this.date_angajati.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.date_angajati_CellContentClick);
             // 
             // buton_iesireAngajati
             // 
@@ -131,6 +132,7 @@
             this.buton_adaugaAngajati.Text = "Adauga";
             this.buton_adaugaAngajati.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.buton_adaugaAngajati.UseVisualStyleBackColor = true;
+            this.buton_adaugaAngajati.Click += new System.EventHandler(this.buton_adaugaAngajati_Click);
             // 
             // Angajati
             // 
@@ -146,6 +148,7 @@
             this.Controls.Add(this.date_angajati);
             this.Controls.Add(this.nav_angajati);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.nav_angajati;
             this.MaximizeBox = false;
             this.MinimizeBox = false;

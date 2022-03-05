@@ -1,0 +1,16 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "c8e9eb53-6bee-4ffe-b746-faea88e4889c": {
+      "ProjectGuid": "c8e9eb53-6bee-4ffe-b746-faea88e4889c",
+      "DisplayName": "administrare_hotel",
+      "ColorIndex": 0
+    },
+    "09014357-8788-4d6a-a958-b66309adb1a5": {
+      "ProjectGuid": "09014357-8788-4d6a-a958-b66309adb1a5",
+      "DisplayName": "Solution Items",
+      "ColorIndex": 1
+    }
+  },
+  "NextColorIndex": 2
+}

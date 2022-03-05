@@ -145,12 +145,14 @@
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.nav_camere);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.nav_camere;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Camere";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Camere";
+            this.Load += new System.EventHandler(this.Camere_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.nav_camere.ResumeLayout(false);
             this.nav_camere.PerformLayout();
