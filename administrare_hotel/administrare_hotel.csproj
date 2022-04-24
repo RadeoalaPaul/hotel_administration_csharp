@@ -89,17 +89,35 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="adaugaAngajati.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="adaugaAngajati.Designer.cs">
+      <DependentUpon>adaugaAngajati.cs</DependentUpon>
+    </Compile>
+    <Compile Include="adaugaCamere.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="adaugaCamere.Designer.cs">
+      <DependentUpon>adaugaCamere.cs</DependentUpon>
+    </Compile>
+    <Compile Include="adaugaClienti.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="adaugaClienti.Designer.cs">
+      <DependentUpon>adaugaClienti.cs</DependentUpon>
+    </Compile>
+    <Compile Include="adaugaRezervari.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="adaugaRezervari.Designer.cs">
+      <DependentUpon>adaugaRezervari.cs</DependentUpon>
+    </Compile>
     <Compile Include="Angajati.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Angajati.Designer.cs">
       <DependentUpon>Angajati.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Angajati_Adauga.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Angajati_Adauga.Designer.cs">
-      <DependentUpon>Angajati_Adauga.cs</DependentUpon>
     </Compile>
     <Compile Include="Camere.cs">
       <SubType>Form</SubType>
@@ -113,12 +131,35 @@
     <Compile Include="Clienti.Designer.cs">
       <DependentUpon>Clienti.cs</DependentUpon>
     </Compile>
-    <Compile Include="Database.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="modificaAngajati.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="modificaAngajati.Designer.cs">
+      <DependentUpon>modificaAngajati.cs</DependentUpon>
+    </Compile>
+    <Compile Include="modificaCamere.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="modificaCamere.Designer.cs">
+      <DependentUpon>modificaCamere.cs</DependentUpon>
+    </Compile>
+    <Compile Include="modificaClienti.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="modificaClienti.Designer.cs">
+      <DependentUpon>modificaClienti.cs</DependentUpon>
+    </Compile>
+    <Compile Include="modificaRezervari.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="modificaRezervari.Designer.cs">
+      <DependentUpon>modificaRezervari.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -133,11 +174,20 @@
     <Compile Include="Rezervari.Designer.cs">
       <DependentUpon>Rezervari.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="adaugaAngajati.resx">
+      <DependentUpon>adaugaAngajati.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="adaugaCamere.resx">
+      <DependentUpon>adaugaCamere.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="adaugaClienti.resx">
+      <DependentUpon>adaugaClienti.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="adaugaRezervari.resx">
+      <DependentUpon>adaugaRezervari.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Angajati.resx">
       <DependentUpon>Angajati.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Angajati_Adauga.resx">
-      <DependentUpon>Angajati_Adauga.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Camere.resx">
       <DependentUpon>Camere.cs</DependentUpon>
@@ -147,6 +197,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="modificaAngajati.resx">
+      <DependentUpon>modificaAngajati.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="modificaCamere.resx">
+      <DependentUpon>modificaCamere.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="modificaClienti.resx">
+      <DependentUpon>modificaClienti.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="modificaRezervari.resx">
+      <DependentUpon>modificaRezervari.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

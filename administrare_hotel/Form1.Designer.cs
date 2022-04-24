@@ -57,15 +57,15 @@
             // nav_about
             // 
             this.nav_about.Name = "nav_about";
-            this.nav_about.Size = new System.Drawing.Size(52, 20);
-            this.nav_about.Text = "About";
+            this.nav_about.Size = new System.Drawing.Size(55, 20);
+            this.nav_about.Text = "Despre";
             this.nav_about.Click += new System.EventHandler(this.nav_about_Click);
             // 
             // nav_main_help
             // 
             this.nav_main_help.Name = "nav_main_help";
-            this.nav_main_help.Size = new System.Drawing.Size(44, 20);
-            this.nav_main_help.Text = "Help";
+            this.nav_main_help.Size = new System.Drawing.Size(52, 20);
+            this.nav_main_help.Text = "Ajutor";
             this.nav_main_help.Click += new System.EventHandler(this.nav_main_help_Click);
             // 
             // db_status

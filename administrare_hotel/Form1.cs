@@ -21,9 +21,34 @@ namespace administrare_hotel
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            Database database = new Database();
-            if (!database.connection()) db_status.Text += " not connected";
-            else { db_status.Text += " connected successfully"; database.conn.Close(); }
+            if (Conexiune()) { db_status.ForeColor = Color.Green; db_status.Text += " successfully connected"; }
+            else
+            {
+                db_status.Text += " not connected";
+                db_status.ForeColor = Color.Red;
+                foreach (var button in this.Controls.OfType<Button>())
+                {
+                    button.Enabled = false;
+                    if (button.Text == "Iesire") button.Enabled = true;
+                }
+            }
+        }
+
+        public bool Conexiune()
+        {
+            MySqlConnection conn = new MySqlConnection();
+            string connection_string = @"server = localhost; port = 3306; database = hotel_database; user = root; password =";
+            conn.ConnectionString = connection_string;
+            try
+            {
+                conn.Open();
+                conn.Close();
+                return true;
+            }
+            catch (Exception ex) {
+                MessageBox.Show(ex.Message);  
+                return false; 
+            }
         }
 
         private void buton_Iesire_Click(object sender, EventArgs e)
@@ -31,7 +56,6 @@ namespace administrare_hotel
             DialogResult mesaj;
             mesaj = MessageBox.Show("Doresti sa inchizi aplicatia?", "Iesire", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (mesaj == DialogResult.Yes) Application.Exit();
-            else { };
         }
 
         private void buton_Angajati_Click(object sender, EventArgs e)

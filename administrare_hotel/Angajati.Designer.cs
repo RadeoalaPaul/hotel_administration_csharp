@@ -34,30 +34,35 @@
             this.nav_angajati = new System.Windows.Forms.MenuStrip();
             this.nav_about = new System.Windows.Forms.ToolStripMenuItem();
             this.nav_angajati_help = new System.Windows.Forms.ToolStripMenuItem();
-            this.buton_stergeAngajati = new System.Windows.Forms.Button();
-            this.buton_modificaAngajati = new System.Windows.Forms.Button();
             this.buton_adaugaAngajati = new System.Windows.Forms.Button();
+            this.buton_modificaAngajati = new System.Windows.Forms.Button();
+            this.buton_stergeAngajati = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.date_angajati)).BeginInit();
             this.nav_angajati.SuspendLayout();
             this.SuspendLayout();
             // 
             // date_angajati
             // 
+            this.date_angajati.AllowUserToAddRows = false;
+            this.date_angajati.AllowUserToDeleteRows = false;
             this.date_angajati.AllowUserToOrderColumns = true;
             this.date_angajati.BackgroundColor = System.Drawing.SystemColors.Control;
             this.date_angajati.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.date_angajati.Location = new System.Drawing.Point(12, 78);
+            this.date_angajati.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
+            this.date_angajati.Location = new System.Drawing.Point(12, 66);
+            this.date_angajati.MultiSelect = false;
             this.date_angajati.Name = "date_angajati";
-            this.date_angajati.Size = new System.Drawing.Size(584, 421);
+            this.date_angajati.ReadOnly = true;
+            this.date_angajati.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.date_angajati.Size = new System.Drawing.Size(580, 433);
             this.date_angajati.TabIndex = 0;
-            this.date_angajati.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.date_angajati_CellContentClick);
             // 
             // buton_iesireAngajati
             // 
             this.buton_iesireAngajati.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buton_iesireAngajati.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buton_iesireAngajati.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold);
-            this.buton_iesireAngajati.Location = new System.Drawing.Point(602, 439);
+            this.buton_iesireAngajati.Location = new System.Drawing.Point(598, 439);
             this.buton_iesireAngajati.Name = "buton_iesireAngajati";
             this.buton_iesireAngajati.Size = new System.Drawing.Size(148, 60);
             this.buton_iesireAngajati.TabIndex = 4;
@@ -80,44 +85,16 @@
             // nav_about
             // 
             this.nav_about.Name = "nav_about";
-            this.nav_about.Size = new System.Drawing.Size(52, 20);
-            this.nav_about.Text = "About";
+            this.nav_about.Size = new System.Drawing.Size(55, 20);
+            this.nav_about.Text = "Despre";
             this.nav_about.Click += new System.EventHandler(this.nav_about_Click);
             // 
             // nav_angajati_help
             // 
             this.nav_angajati_help.Name = "nav_angajati_help";
-            this.nav_angajati_help.Size = new System.Drawing.Size(44, 20);
-            this.nav_angajati_help.Text = "Help";
+            this.nav_angajati_help.Size = new System.Drawing.Size(52, 20);
+            this.nav_angajati_help.Text = "Ajutor";
             this.nav_angajati_help.Click += new System.EventHandler(this.nav_angajati_help_Click);
-            // 
-            // buton_stergeAngajati
-            // 
-            this.buton_stergeAngajati.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buton_stergeAngajati.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buton_stergeAngajati.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold);
-            this.buton_stergeAngajati.Image = global::administrare_hotel.Properties.Resources.delete;
-            this.buton_stergeAngajati.Location = new System.Drawing.Point(602, 210);
-            this.buton_stergeAngajati.Name = "buton_stergeAngajati";
-            this.buton_stergeAngajati.Size = new System.Drawing.Size(148, 60);
-            this.buton_stergeAngajati.TabIndex = 3;
-            this.buton_stergeAngajati.Text = "Sterge";
-            this.buton_stergeAngajati.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.buton_stergeAngajati.UseVisualStyleBackColor = true;
-            // 
-            // buton_modificaAngajati
-            // 
-            this.buton_modificaAngajati.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buton_modificaAngajati.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buton_modificaAngajati.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold);
-            this.buton_modificaAngajati.Image = global::administrare_hotel.Properties.Resources.edit;
-            this.buton_modificaAngajati.Location = new System.Drawing.Point(602, 144);
-            this.buton_modificaAngajati.Name = "buton_modificaAngajati";
-            this.buton_modificaAngajati.Size = new System.Drawing.Size(148, 60);
-            this.buton_modificaAngajati.TabIndex = 2;
-            this.buton_modificaAngajati.Text = "Modifica";
-            this.buton_modificaAngajati.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.buton_modificaAngajati.UseVisualStyleBackColor = true;
             // 
             // buton_adaugaAngajati
             // 
@@ -125,14 +102,44 @@
             this.buton_adaugaAngajati.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buton_adaugaAngajati.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold);
             this.buton_adaugaAngajati.Image = ((System.Drawing.Image)(resources.GetObject("buton_adaugaAngajati.Image")));
-            this.buton_adaugaAngajati.Location = new System.Drawing.Point(602, 78);
+            this.buton_adaugaAngajati.Location = new System.Drawing.Point(598, 66);
             this.buton_adaugaAngajati.Name = "buton_adaugaAngajati";
             this.buton_adaugaAngajati.Size = new System.Drawing.Size(148, 60);
-            this.buton_adaugaAngajati.TabIndex = 1;
+            this.buton_adaugaAngajati.TabIndex = 6;
             this.buton_adaugaAngajati.Text = "Adauga";
             this.buton_adaugaAngajati.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.buton_adaugaAngajati.UseVisualStyleBackColor = true;
             this.buton_adaugaAngajati.Click += new System.EventHandler(this.buton_adaugaAngajati_Click);
+            // 
+            // buton_modificaAngajati
+            // 
+            this.buton_modificaAngajati.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buton_modificaAngajati.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buton_modificaAngajati.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold);
+            this.buton_modificaAngajati.Image = global::administrare_hotel.Properties.Resources.edit;
+            this.buton_modificaAngajati.Location = new System.Drawing.Point(598, 132);
+            this.buton_modificaAngajati.Name = "buton_modificaAngajati";
+            this.buton_modificaAngajati.Size = new System.Drawing.Size(148, 60);
+            this.buton_modificaAngajati.TabIndex = 7;
+            this.buton_modificaAngajati.Text = "Modifica";
+            this.buton_modificaAngajati.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.buton_modificaAngajati.UseVisualStyleBackColor = true;
+            this.buton_modificaAngajati.Click += new System.EventHandler(this.buton_modificaAngajati_Click);
+            // 
+            // buton_stergeAngajati
+            // 
+            this.buton_stergeAngajati.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buton_stergeAngajati.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buton_stergeAngajati.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold);
+            this.buton_stergeAngajati.Image = global::administrare_hotel.Properties.Resources.delete;
+            this.buton_stergeAngajati.Location = new System.Drawing.Point(598, 198);
+            this.buton_stergeAngajati.Name = "buton_stergeAngajati";
+            this.buton_stergeAngajati.Size = new System.Drawing.Size(148, 60);
+            this.buton_stergeAngajati.TabIndex = 8;
+            this.buton_stergeAngajati.Text = "Sterge";
+            this.buton_stergeAngajati.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.buton_stergeAngajati.UseVisualStyleBackColor = true;
+            this.buton_stergeAngajati.Click += new System.EventHandler(this.buton_stergeAngajati_Click);
             // 
             // Angajati
             // 
@@ -141,10 +148,10 @@
             this.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.ClientSize = new System.Drawing.Size(758, 511);
             this.ControlBox = false;
-            this.Controls.Add(this.buton_iesireAngajati);
             this.Controls.Add(this.buton_stergeAngajati);
             this.Controls.Add(this.buton_modificaAngajati);
             this.Controls.Add(this.buton_adaugaAngajati);
+            this.Controls.Add(this.buton_iesireAngajati);
             this.Controls.Add(this.date_angajati);
             this.Controls.Add(this.nav_angajati);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
@@ -167,12 +174,12 @@
         #endregion
 
         private System.Windows.Forms.DataGridView date_angajati;
-        private System.Windows.Forms.Button buton_adaugaAngajati;
-        private System.Windows.Forms.Button buton_modificaAngajati;
-        private System.Windows.Forms.Button buton_stergeAngajati;
         private System.Windows.Forms.Button buton_iesireAngajati;
         private System.Windows.Forms.MenuStrip nav_angajati;
         private System.Windows.Forms.ToolStripMenuItem nav_about;
         private System.Windows.Forms.ToolStripMenuItem nav_angajati_help;
+        private System.Windows.Forms.Button buton_adaugaAngajati;
+        private System.Windows.Forms.Button buton_modificaAngajati;
+        private System.Windows.Forms.Button buton_stergeAngajati;
     }
 }

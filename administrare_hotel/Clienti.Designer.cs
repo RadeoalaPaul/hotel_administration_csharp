@@ -43,10 +43,14 @@
             // 
             // date_clienti
             // 
+            this.date_clienti.AllowUserToAddRows = false;
+            this.date_clienti.AllowUserToDeleteRows = false;
             this.date_clienti.BackgroundColor = System.Drawing.SystemColors.Control;
             this.date_clienti.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.date_clienti.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
             this.date_clienti.Location = new System.Drawing.Point(12, 78);
             this.date_clienti.Name = "date_clienti";
+            this.date_clienti.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.date_clienti.Size = new System.Drawing.Size(584, 421);
             this.date_clienti.TabIndex = 0;
             // 
@@ -78,15 +82,15 @@
             // nav_about
             // 
             this.nav_about.Name = "nav_about";
-            this.nav_about.Size = new System.Drawing.Size(52, 20);
-            this.nav_about.Text = "About";
+            this.nav_about.Size = new System.Drawing.Size(55, 20);
+            this.nav_about.Text = "Despre";
             this.nav_about.Click += new System.EventHandler(this.nav_about_Click);
             // 
             // nav_clienti_help
             // 
             this.nav_clienti_help.Name = "nav_clienti_help";
-            this.nav_clienti_help.Size = new System.Drawing.Size(44, 20);
-            this.nav_clienti_help.Text = "Help";
+            this.nav_clienti_help.Size = new System.Drawing.Size(52, 20);
+            this.nav_clienti_help.Text = "Ajutor";
             this.nav_clienti_help.Click += new System.EventHandler(this.nav_clienti_help_Click);
             // 
             // buton_stergeClienti
@@ -102,6 +106,7 @@
             this.buton_stergeClienti.Text = "Sterge";
             this.buton_stergeClienti.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.buton_stergeClienti.UseVisualStyleBackColor = true;
+            this.buton_stergeClienti.Click += new System.EventHandler(this.buton_stergeClienti_Click);
             // 
             // buton_modificaClienti
             // 
@@ -116,6 +121,7 @@
             this.buton_modificaClienti.Text = "Modifica";
             this.buton_modificaClienti.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.buton_modificaClienti.UseVisualStyleBackColor = true;
+            this.buton_modificaClienti.Click += new System.EventHandler(this.buton_modificaClienti_Click);
             // 
             // buton_adaugaCLienti
             // 
@@ -130,6 +136,7 @@
             this.buton_adaugaCLienti.Text = "Adauga";
             this.buton_adaugaCLienti.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.buton_adaugaCLienti.UseVisualStyleBackColor = true;
+            this.buton_adaugaCLienti.Click += new System.EventHandler(this.buton_adaugaCLienti_Click);
             // 
             // Clienti
             // 
@@ -152,6 +159,7 @@
             this.Name = "Clienti";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Clienti";
+            this.Load += new System.EventHandler(this.Clienti_Load);
             ((System.ComponentModel.ISupportInitialize)(this.date_clienti)).EndInit();
             this.nav_clienti.ResumeLayout(false);
             this.nav_clienti.PerformLayout();

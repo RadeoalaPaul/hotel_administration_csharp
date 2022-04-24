@@ -43,10 +43,15 @@
             // 
             // date_rezervari
             // 
+            this.date_rezervari.AllowUserToAddRows = false;
+            this.date_rezervari.AllowUserToDeleteRows = false;
             this.date_rezervari.BackgroundColor = System.Drawing.SystemColors.Control;
             this.date_rezervari.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.date_rezervari.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
             this.date_rezervari.Location = new System.Drawing.Point(12, 78);
+            this.date_rezervari.MultiSelect = false;
             this.date_rezervari.Name = "date_rezervari";
+            this.date_rezervari.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.date_rezervari.Size = new System.Drawing.Size(584, 421);
             this.date_rezervari.TabIndex = 0;
             // 
@@ -78,15 +83,15 @@
             // nav_about
             // 
             this.nav_about.Name = "nav_about";
-            this.nav_about.Size = new System.Drawing.Size(52, 20);
-            this.nav_about.Text = "About";
+            this.nav_about.Size = new System.Drawing.Size(55, 20);
+            this.nav_about.Text = "Despre";
             this.nav_about.Click += new System.EventHandler(this.nav_about_Click);
             // 
             // nav_rezervari_help
             // 
             this.nav_rezervari_help.Name = "nav_rezervari_help";
-            this.nav_rezervari_help.Size = new System.Drawing.Size(44, 20);
-            this.nav_rezervari_help.Text = "Help";
+            this.nav_rezervari_help.Size = new System.Drawing.Size(52, 20);
+            this.nav_rezervari_help.Text = "Ajutor";
             this.nav_rezervari_help.Click += new System.EventHandler(this.nav_rezervari_help_Click);
             // 
             // buton_stergeRezervari
@@ -102,6 +107,7 @@
             this.buton_stergeRezervari.Text = "Sterge";
             this.buton_stergeRezervari.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.buton_stergeRezervari.UseVisualStyleBackColor = true;
+            this.buton_stergeRezervari.Click += new System.EventHandler(this.buton_stergeRezervari_Click);
             // 
             // buton_modificaRezervari
             // 
@@ -116,6 +122,7 @@
             this.buton_modificaRezervari.Text = "Modifica";
             this.buton_modificaRezervari.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.buton_modificaRezervari.UseVisualStyleBackColor = true;
+            this.buton_modificaRezervari.Click += new System.EventHandler(this.buton_modificaRezervari_Click);
             // 
             // buton_adaugaRezervari
             // 
@@ -130,6 +137,7 @@
             this.buton_adaugaRezervari.Text = "Adauga";
             this.buton_adaugaRezervari.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.buton_adaugaRezervari.UseVisualStyleBackColor = true;
+            this.buton_adaugaRezervari.Click += new System.EventHandler(this.buton_adaugaRezervari_Click);
             // 
             // Rezervari
             // 
@@ -152,6 +160,7 @@
             this.Name = "Rezervari";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Rezervari";
+            this.Load += new System.EventHandler(this.Rezervari_Load);
             ((System.ComponentModel.ISupportInitialize)(this.date_rezervari)).EndInit();
             this.nav_rezervari.ResumeLayout(false);
             this.nav_rezervari.PerformLayout();

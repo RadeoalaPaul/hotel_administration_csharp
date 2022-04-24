@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Camere));
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.date_camere = new System.Windows.Forms.DataGridView();
             this.buton_iesireCamere = new System.Windows.Forms.Button();
             this.nav_camere = new System.Windows.Forms.MenuStrip();
             this.nav_about = new System.Windows.Forms.ToolStripMenuItem();
@@ -37,18 +37,23 @@
             this.buton_stergeCamere = new System.Windows.Forms.Button();
             this.buton_modificaCamere = new System.Windows.Forms.Button();
             this.buton_adaugaCamere = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.date_camere)).BeginInit();
             this.nav_camere.SuspendLayout();
             this.SuspendLayout();
             // 
-            // dataGridView1
+            // date_camere
             // 
-            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.Control;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 78);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(584, 421);
-            this.dataGridView1.TabIndex = 0;
+            this.date_camere.AllowUserToAddRows = false;
+            this.date_camere.AllowUserToDeleteRows = false;
+            this.date_camere.BackgroundColor = System.Drawing.SystemColors.Control;
+            this.date_camere.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.date_camere.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
+            this.date_camere.Location = new System.Drawing.Point(12, 78);
+            this.date_camere.MultiSelect = false;
+            this.date_camere.Name = "date_camere";
+            this.date_camere.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.date_camere.Size = new System.Drawing.Size(584, 421);
+            this.date_camere.TabIndex = 0;
             // 
             // buton_iesireCamere
             // 
@@ -78,15 +83,15 @@
             // nav_about
             // 
             this.nav_about.Name = "nav_about";
-            this.nav_about.Size = new System.Drawing.Size(52, 20);
-            this.nav_about.Text = "About";
+            this.nav_about.Size = new System.Drawing.Size(55, 20);
+            this.nav_about.Text = "Despre";
             this.nav_about.Click += new System.EventHandler(this.nav_about_Click);
             // 
             // nav_camere_help
             // 
             this.nav_camere_help.Name = "nav_camere_help";
-            this.nav_camere_help.Size = new System.Drawing.Size(44, 20);
-            this.nav_camere_help.Text = "Help";
+            this.nav_camere_help.Size = new System.Drawing.Size(52, 20);
+            this.nav_camere_help.Text = "Ajutor";
             this.nav_camere_help.Click += new System.EventHandler(this.nav_camere_help_Click);
             // 
             // buton_stergeCamere
@@ -102,6 +107,7 @@
             this.buton_stergeCamere.Text = "Sterge";
             this.buton_stergeCamere.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.buton_stergeCamere.UseVisualStyleBackColor = true;
+            this.buton_stergeCamere.Click += new System.EventHandler(this.buton_stergeCamere_Click);
             // 
             // buton_modificaCamere
             // 
@@ -116,6 +122,7 @@
             this.buton_modificaCamere.Text = "Modifica";
             this.buton_modificaCamere.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.buton_modificaCamere.UseVisualStyleBackColor = true;
+            this.buton_modificaCamere.Click += new System.EventHandler(this.buton_modificaCamere_Click);
             // 
             // buton_adaugaCamere
             // 
@@ -130,6 +137,7 @@
             this.buton_adaugaCamere.Text = "Adauga";
             this.buton_adaugaCamere.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.buton_adaugaCamere.UseVisualStyleBackColor = true;
+            this.buton_adaugaCamere.Click += new System.EventHandler(this.buton_adaugaCamere_Click);
             // 
             // Camere
             // 
@@ -142,7 +150,7 @@
             this.Controls.Add(this.buton_stergeCamere);
             this.Controls.Add(this.buton_modificaCamere);
             this.Controls.Add(this.buton_adaugaCamere);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.date_camere);
             this.Controls.Add(this.nav_camere);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -153,7 +161,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Camere";
             this.Load += new System.EventHandler(this.Camere_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.date_camere)).EndInit();
             this.nav_camere.ResumeLayout(false);
             this.nav_camere.PerformLayout();
             this.ResumeLayout(false);
@@ -163,7 +171,7 @@
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView date_camere;
         private System.Windows.Forms.Button buton_adaugaCamere;
         private System.Windows.Forms.Button buton_modificaCamere;
         private System.Windows.Forms.Button buton_stergeCamere;
